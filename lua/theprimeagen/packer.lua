@@ -1,21 +1,21 @@
 return require("packer").startup(function()
     use("wbthomason/packer.nvim")
-    --use("sbdchd/neoformat")
+    use("sbdchd/neoformat")
     use("tpope/vim-commentary")
     use("tpope/vim-fugitive")
 
     -- Simple plugins can be specified as strings
-    -- use("TimUntersberger/neogit")
+    use("TimUntersberger/neogit")
 
     -- TJ created lodash of neovim
     use("nvim-lua/plenary.nvim")
     use("nvim-lua/popup.nvim")
     use("nvim-telescope/telescope.nvim")
 
-    --use({
-        --'nvim-lualine/lualine.nvim',
-        --requires = { 'kyazdani42/nvim-web-devicons', opt = true }
-    --})
+    use({
+        'nvim-lualine/lualine.nvim',
+        requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+    })
 
     -- All the things
     -- use("neovim/nvim-lspconfig")
@@ -46,6 +46,7 @@ return require("packer").startup(function()
     -- Colorscheme section
     use("gruvbox-community/gruvbox")
     use("folke/tokyonight.nvim")
+    use("NLKNguyen/papercolor-theme")
 
     -- use("nvim-treesitter/nvim-treesitter", {
     --     run = ":TSUpdate"
