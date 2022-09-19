@@ -1,5 +1,6 @@
 vim.opt.nu = true
 vim.opt.relativenumber = true
+vim.cmd [[colorscheme gruvbox]]
 
 vim.opt.errorbells = false
 

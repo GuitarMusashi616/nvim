@@ -1,6 +1,6 @@
 require("theprimeagen.set")
---require("theprimeagen.packer")
---require("theprimeagen.neogit")
+require("theprimeagen.packer")
+require("theprimeagen.neogit")
 --require("theprimeagen.debugger")
 --require("theprimeagen.rtp")
 
@@ -10,9 +10,9 @@ ThePrimeagenGroup = augroup('ThePrimeagen', {})
 local autocmd = vim.api.nvim_create_autocmd
 local yank_group = augroup('HighlightYank', {})
 
---function R(name)
---    require("plenary.reload").reload_module(name)
---end
+function R(name)
+    require("plenary.reload").reload_module(name)
+end
 
 -- shows highlight for a split second when yanking
 autocmd('TextYankPost', {
@@ -26,13 +26,13 @@ autocmd('TextYankPost', {
     end,
 })
 
---autocmd({"BufEnter", "BufWinEnter", "TabEnter"}, {
---    group = ThePrimeagenGroup,
---    pattern = "*.rs",
---    callback = function()
---        require("lsp_extensions").inlay_hints{}
---    end
---})
+-- autocmd({"BufEnter", "BufWinEnter", "TabEnter"}, {
+--     group = ThePrimeagenGroup,
+--     pattern = "*.rs",
+--     callback = function()
+--         require("lsp_extensions").inlay_hints{}
+--     end
+-- })
 
 -- removes trailing whitespace just before save
 autocmd({"BufWritePre"}, {
