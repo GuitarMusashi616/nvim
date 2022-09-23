@@ -1,6 +1,7 @@
 require("theprimeagen.set")
 require("theprimeagen.packer")
-require("theprimeagen.neogit")
+require("theprimeagen.nvimrc")
+-- require("theprimeagen.neogit")
 --require("theprimeagen.debugger")
 --require("theprimeagen.rtp")
 
