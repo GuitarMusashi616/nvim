@@ -1,2 +1,3 @@
 -- vim.cmd(":TSInstall all")
--- vim.cmd("colorscheme gruvbox")
+vim.g.gruvbox_baby_background_color = "dark"
+vim.cmd("colorscheme gruvbox-baby")

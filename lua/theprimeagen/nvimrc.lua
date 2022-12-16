@@ -16,4 +16,4 @@ km.nnoremap("<C-q>", ":q<CR>")
 km.nnoremap("<space>C", ":e ~/AppData/Local/nvim/lua/theprimeagen/nvimrc.lua<CR>")
 
 -- -- close buffer with <space>c
--- km.nnoremap("<space>c", ":bd")
+km.nnoremap("<space>c", ":bd<CR>")
