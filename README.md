@@ -11,12 +11,13 @@ nvim
 ```
 
 # Linux Install
-
+```
 apt install -y neovim
 mkdir -p ~/.config/nvim
 nvim ~/.config/nvim/init.vim
-
+```
 # Set simple config
+```
 set number
 set relativenumber
 
@@ -29,3 +30,4 @@ set autoindent       " Copy indent from current line when starting a new line
 
 " Optional: make backspace more powerful
 set backspace=indent,eol,start
+```
